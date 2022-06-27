@@ -6,6 +6,6 @@ Name=My App
 Comment=Proves that we can use Vala and Gtk
 Categories=Development;Construction;
 
-Icon=myapp
-Exec=Aplication
+Icon=com.github.MatiasKottwitz.HolaMundoDeNuevo
+Exec=com.github.MatiasKottwitz.HolaMundoDeNuevo
 Terminal=false

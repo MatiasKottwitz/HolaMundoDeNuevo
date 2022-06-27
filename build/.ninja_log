@@ -1,0 +1,24 @@
+# ninja log v5
+0	612	1656279511082332420	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/src/Aplication.c	96506fbd09259fc6
+613	1307	1656279511878352883	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/meson-generated_src_Aplication.c.o	ee1c4b03c870b6ad
+1309	1501	1656279512066357717	com.github.MatiasKottwitz.HolaMundoDeNuevo	5de88c22779cfbcd
+3	14741	0	meson-install	9bd7faa9472bf40f
+0	399	0	reconfigure	be06bf1fcf24b2df
+3	3565	0	meson-install	9bd7faa9472bf40f
+0	382	0	reconfigure	be06bf1fcf24b2df
+3	3593	0	meson-install	9bd7faa9472bf40f
+3	631	1656284254158618840	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/src/Aplication.c	96506fbd09259fc6
+631	1079	1656284254730635145	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/meson-generated_src_Aplication.c.o	ee1c4b03c870b6ad
+1079	1223	1656284254874639250	com.github.MatiasKottwitz.HolaMundoDeNuevo	5de88c22779cfbcd
+3	3529	0	meson-install	9bd7faa9472bf40f
+3	611	1656284306488108926	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/src/Aplication.c	96506fbd09259fc6
+611	1066	1656284307048124857	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/meson-generated_src_Aplication.c.o	ee1c4b03c870b6ad
+1066	1215	1656284307196129066	com.github.MatiasKottwitz.HolaMundoDeNuevo	5de88c22779cfbcd
+3	3955	0	meson-install	9bd7faa9472bf40f
+0	371	1656292275554824471	build.ninja	be06bf1fcf24b2df
+0	422	1656292387897759528	build.ninja	be06bf1fcf24b2df
+0	568	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-pot	c24310ead24212c9
+0	558	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-pot	c24310ead24212c9
+0	568	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-update-po	29a29cb35a74b82c
+0	517	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-pot	c24310ead24212c9
+0	535	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-update-po	29a29cb35a74b82c

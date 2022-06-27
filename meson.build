@@ -1,5 +1,10 @@
+
 # Nombre del proyecto y lenguade programacion
-project ('https://github.com/MatiasKottwitz/HolaMundoDeNuevo',vala','c')
+project('com.github.MatiasKottwitz.HolaMundoDeNuevo','vala','c')
+# Incluir el modulo de traducciones
+i18n = import('i18n')
+# Establecer Dominio de traduccion.
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
 # Creacion del ejecutable, lista de los archivos que se van a compilar, lista de las dependencias que se van a utilizar.
 executable(
@@ -11,20 +16,28 @@ executable(
   install: true
 )
 
-# Instalacion del archivo .desktop, para que se vea en el menu de aplicaciones.
-install_data(
-  'data' / 'hello-again.desktop',
-  install_dir: get_option(datadir) / 'aplications',
-  rename: meson.project_name() + '.desktop'
+
+# Traducir e instalar el archivo .desktop 
+i18n.merge_file(
+    input: 'data' / 'hello-again.desktop.in',
+    output: meson.project_name() + '.desktop',
+    po_dir: meson.source_root() / 'po',
+    type: 'desktop',
+    install: true,
+    install_dir: get_option('datadir') / 'applications'
 )
 
-# Instalacion del archivo .metainfo.xml para que pueda ser visto en el AppCenter.
-install_data(
-  'data' / 'hello-again.metainfo.xml',
-  install_dir: get_option('datadir') / 'metainfo',
-  rename: meson.project_name() + '.metainfo.xml'
+#Traducir e instalar el archivo .metainfo
+i18n.merge_file(
+    input: 'data' / 'hello-again.metainfo.xml.in',
+    output: meson.project_name() + '.metainfo.xml',
+    po_dir: meson.source_root() / 'po',
+    install: true,
+    install_dir: get_option('datadir') / 'metainfo'
 )
 
 
 
+
+subdir('po')
 
