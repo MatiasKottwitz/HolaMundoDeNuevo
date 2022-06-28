@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name[en]=My App
+Name=My App
+Comment[de]=Beweist, dass wir Vala und Gtk verwenden konnen
+Comment[en]=Proves that we can use Vala and Gtk
+Comment=Proves that we can use Vala and Gtk
+Categories=Development;Construction;
+
+Icon[en]=com.github.MatiasKottwitz.HolaMundoDeNuevo
+Icon=com.github.MatiasKottwitz.HolaMundoDeNuevo
+Exec=com.github.MatiasKottwitz.HolaMundoDeNuevo
+Terminal=false

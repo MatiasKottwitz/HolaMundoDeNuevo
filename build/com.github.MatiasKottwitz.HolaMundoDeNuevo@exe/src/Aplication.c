@@ -9,9 +9,10 @@
 #include <gtk/gtk.h>
 #include <glib-object.h>
 #include <gio/gio.h>
+#include <glib.h>
+#include <glib/gi18n-lib.h>
 #include <stdlib.h>
 #include <string.h>
-#include <glib.h>
 
 #define TYPE_MY_APP (my_app_get_type ())
 #define MY_APP(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), TYPE_MY_APP, MyApp))
@@ -71,7 +72,7 @@ my_app_construct (GType object_type)
 	self = (MyApp*) g_object_new (object_type, "application-id", "https://github.com/MatiasKottwitz/HolaMundoDeNuevo", "flags", G_APPLICATION_FLAGS_NONE, NULL);
 #line 7 "../src/Aplication.vala"
 	return self;
-#line 75 "Aplication.c"
+#line 76 "Aplication.c"
 }
 
 MyApp*
@@ -79,7 +80,7 @@ my_app_new (void)
 {
 #line 7 "../src/Aplication.vala"
 	return my_app_construct (TYPE_MY_APP);
-#line 83 "Aplication.c"
+#line 84 "Aplication.c"
 }
 
 static Block1Data*
@@ -89,7 +90,7 @@ block1_data_ref (Block1Data* _data1_)
 	g_atomic_int_inc (&_data1_->_ref_count_);
 #line 15 "../src/Aplication.vala"
 	return _data1_;
-#line 93 "Aplication.c"
+#line 94 "Aplication.c"
 }
 
 static void
@@ -99,7 +100,7 @@ block1_data_unref (void * _userdata_)
 	_data1_ = (Block1Data*) _userdata_;
 #line 15 "../src/Aplication.vala"
 	if (g_atomic_int_dec_and_test (&_data1_->_ref_count_)) {
-#line 103 "Aplication.c"
+#line 104 "Aplication.c"
 		MyApp* self;
 #line 15 "../src/Aplication.vala"
 		self = _data1_->self;
@@ -109,7 +110,7 @@ block1_data_unref (void * _userdata_)
 		_g_object_unref0 (self);
 #line 15 "../src/Aplication.vala"
 		g_slice_free (Block1Data, _data1_);
-#line 113 "Aplication.c"
+#line 114 "Aplication.c"
 	}
 }
 
@@ -120,10 +121,10 @@ __lambda4_ (Block1Data* _data1_)
 #line 19 "../src/Aplication.vala"
 	self = _data1_->self;
 #line 20 "../src/Aplication.vala"
-	gtk_button_set_label (_data1_->button_hello, "Bien! Hola de Nuevo!!");
+	gtk_button_set_label (_data1_->button_hello, _ ("Bien! Hola de Nuevo!!"));
 #line 21 "../src/Aplication.vala"
 	gtk_widget_set_sensitive ((GtkWidget*) _data1_->button_hello, FALSE);
-#line 127 "Aplication.c"
+#line 128 "Aplication.c"
 }
 
 static void
@@ -132,7 +133,7 @@ ___lambda4__gtk_button_clicked (GtkButton* _sender,
 {
 #line 19 "../src/Aplication.vala"
 	__lambda4_ (self);
-#line 136 "Aplication.c"
+#line 137 "Aplication.c"
 }
 
 static void
@@ -155,7 +156,7 @@ my_app_real_activate (GApplication* base)
 #line 15 "../src/Aplication.vala"
 	_data1_->self = g_object_ref (self);
 #line 16 "../src/Aplication.vala"
-	_tmp0_ = (GtkButton*) gtk_button_new_with_label ("Aprietame!");
+	_tmp0_ = (GtkButton*) gtk_button_new_with_label (_ ("Aprietame!"));
 #line 16 "../src/Aplication.vala"
 	g_object_set ((GtkWidget*) _tmp0_, "margin", 50, NULL);
 #line 16 "../src/Aplication.vala"
@@ -165,13 +166,13 @@ my_app_real_activate (GApplication* base)
 #line 19 "../src/Aplication.vala"
 	g_signal_connect_data (_data1_->button_hello, "clicked", (GCallback) ___lambda4__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
 #line 23 "../src/Aplication.vala"
-	_tmp1_ = (GtkLabel*) gtk_label_new ("Hola Mundo de nuevo!");
+	_tmp1_ = (GtkLabel*) gtk_label_new (_ ("Hola Mundo de nuevo!"));
 #line 23 "../src/Aplication.vala"
 	g_object_ref_sink (_tmp1_);
 #line 23 "../src/Aplication.vala"
 	label = _tmp1_;
 #line 24 "../src/Aplication.vala"
-	_tmp2_ = g_strdup ("Hola Mundo de nuevo");
+	_tmp2_ = g_strdup (_ ("Hola Mundo de nuevo"));
 #line 24 "../src/Aplication.vala"
 	_tmp3_ = (GtkApplicationWindow*) gtk_application_window_new ((GtkApplication*) self);
 #line 24 "../src/Aplication.vala"
@@ -200,7 +201,7 @@ my_app_real_activate (GApplication* base)
 	block1_data_unref (_data1_);
 #line 15 "../src/Aplication.vala"
 	_data1_ = NULL;
-#line 204 "Aplication.c"
+#line 205 "Aplication.c"
 }
 
 static gint
@@ -223,7 +224,7 @@ my_app_main (gchar** args,
 	result = _tmp2_;
 #line 35 "../src/Aplication.vala"
 	return result;
-#line 227 "Aplication.c"
+#line 228 "Aplication.c"
 }
 
 int
@@ -232,7 +233,7 @@ main (int argc,
 {
 #line 34 "../src/Aplication.vala"
 	return my_app_main (argv, argc);
-#line 236 "Aplication.c"
+#line 237 "Aplication.c"
 }
 
 static void
@@ -243,7 +244,7 @@ my_app_class_init (MyAppClass * klass,
 	my_app_parent_class = g_type_class_peek_parent (klass);
 #line 6 "../src/Aplication.vala"
 	((GApplicationClass *) klass)->activate = (void (*) (GApplication*)) my_app_real_activate;
-#line 247 "Aplication.c"
+#line 248 "Aplication.c"
 }
 
 static void

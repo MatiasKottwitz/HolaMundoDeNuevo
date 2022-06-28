@@ -22,3 +22,9 @@
 0	568	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-update-po	29a29cb35a74b82c
 0	517	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-pot	c24310ead24212c9
 0	535	0	meson-com.github.MatiasKottwitz.HolaMundoDeNuevo-update-po	29a29cb35a74b82c
+0	410	1656452683550322964	build.ninja	be06bf1fcf24b2df
+21	351	1656452683930332526	com.github.MatiasKottwitz.HolaMundoDeNuevo.metainfo.xml	bda310d6a1af1388
+20	363	1656452683926332424	com.github.MatiasKottwitz.HolaMundoDeNuevo.desktop	f583ac8f09913778
+2	602	1656452979533821648	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/src/Aplication.c	96506fbd09259fc6
+602	1365	1656452980393843559	com.github.MatiasKottwitz.HolaMundoDeNuevo@exe/meson-generated_src_Aplication.c.o	dfc2ebe9c4c671b5
+1366	1553	1656452980581848348	com.github.MatiasKottwitz.HolaMundoDeNuevo	5de88c22779cfbcd
