@@ -13,7 +13,7 @@
     }
     
     protected override void activate (){
-        var button_hello = new Gtk.Button.with_label (_("Aprietame!")){
+        var button_hello = new Gtk.Button.with_label (_("Aprietame porfa!")){
           margin = 50
         };
         button_hello.clicked.connect (() => {

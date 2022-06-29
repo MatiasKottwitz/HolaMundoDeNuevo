@@ -156,7 +156,7 @@ my_app_real_activate (GApplication* base)
 #line 15 "../src/Aplication.vala"
 	_data1_->self = g_object_ref (self);
 #line 16 "../src/Aplication.vala"
-	_tmp0_ = (GtkButton*) gtk_button_new_with_label (_ ("Aprietame!"));
+	_tmp0_ = (GtkButton*) gtk_button_new_with_label (_ ("Aprietame porfa!"));
 #line 16 "../src/Aplication.vala"
 	g_object_set ((GtkWidget*) _tmp0_, "margin", 50, NULL);
 #line 16 "../src/Aplication.vala"
