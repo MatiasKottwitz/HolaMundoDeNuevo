@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.matiaskottwitz.my_app</id>
+  <name>My App</name>
+  <name xml:lang="en">My App</name>
+  <summary>Proves that we can use Vala and Gtk</summary>
+  <summary xml:lang="en">Proves that we can use Vala and Gtk</summary>
+  <summary xml:lang="de">Beweist, dass wir Vala und Gtk verwenden konnen</summary>
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>LGPL-3.0-only</project_license>
+  <description>
+    <p>
+      Aplicacion de aprendizaje de valac
+    </p>
+    <p xml:lang="en">Application to learn valac language</p>
+    <p xml:lang="de">Valac-Lern-App</p>
+  </description>
+  <launchable type="desktop-id">io.github.matiaskottwitz.my_app.desktop</launchable>
+</component>

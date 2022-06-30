@@ -1,0 +1,5 @@
+[Runtime]
+name=com.github.MatiasKottwitz.HolaMundoDeNuevo.Locale
+
+[ExtensionOf]
+ref=app/com.github.MatiasKottwitz.HolaMundoDeNuevo/x86_64/master
