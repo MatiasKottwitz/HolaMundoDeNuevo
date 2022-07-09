@@ -13,9 +13,7 @@
     }
     
     protected override void activate (){
-        var grid = new Gtk.Grid(){
-          orientation = Gtk.Orientation.VERTICAL
-        };	
+      
         var button_hello = new Gtk.Button.with_label (_("Aprietame porfa!")){
           margin = 50
         };
